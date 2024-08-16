@@ -16,15 +16,15 @@ bool findValue(int value, int* vector, int vectorSize){
 }
 
 int main() {
-    int* vector = generateRandomVector(1000000);
+    int* vector = generateRandomVector(1000);
 
-   for (int i = 0; i < 1000000; i++) {
+   for (int i = 0; i < 1000; i++) {
         cout << vector[i] << ", ";
     }
     cout << endl;
     
 
-    bool result = findValue(-1, vector, 1000000);
+    bool result = findValue(-1, vector, 1000);
 
     if (result)
         cout << "Achou" << endl;
