@@ -4,22 +4,22 @@
 using namespace std;
 
 bool findValue(int value, int* vector, int vectorSize){
-    bool find = false;
+    bool found = false;
     int i = 0;
-    while((i < vectorSize) && (find == false)){
+    while((i < vectorSize) && (!found)){
         if(vector[i] == value)
-            find = true;
+            found = true;
         i++;
     }
 
-    return find;
+    return found;
 }
 
 int main() {
     int* vector = generateRandomVector(1000);
 
-   for (int i = 0; i < 1000; i++) {
-        cout << vector[i] << ", ";
+    for (int i = 0; i < 1000; i++) {
+            cout << vector[i] << ", ";
     }
     cout << endl;
     
@@ -31,3 +31,4 @@ int main() {
     else
         cout << "Nao achou" << endl;
 }
+
