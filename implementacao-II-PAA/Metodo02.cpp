@@ -26,7 +26,7 @@ int main() {
     int v[] = {4, 3, 1, 8, 2, 7, 5}; 
     int x = 2;
 
-    int ops = 9; //operações iniciais
+    int ops = 5; //operações iniciais
     int result = find(v, x, ops);
 
     cout << "Operações: " << result << endl;
